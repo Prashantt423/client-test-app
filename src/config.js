@@ -1,3 +1,3 @@
-const SERVER_URL="http://localhost:3001/api/users"
+const SERVER_URL="https://express-api-bpas.onrender.com/api"
 
 export default SERVER_URL;

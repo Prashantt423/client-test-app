@@ -8,7 +8,7 @@ function App() {
   const [groupUsers, setGroupUsers] = useState([]);
   useEffect(() => {
     axios
-      .get(SERVER_URL + "/group")
+      .get(SERVER_URL + "/users/group")
       .then(({data}) => {
         console.log(data)
         setGroupUsers(data);
@@ -19,10 +19,10 @@ function App() {
   });
   return (
     <div className="App">
-      <Table endpoint="/income" num="1" />
-      <Table endpoint="/male" num="2" />
-      <Table endpoint="/quote" num="3" />
-      <Table endpoint="/email" num="4" />
+      <Table endpoint="/users/income" num="1" />
+      <Table endpoint="/users/male" num="2" />
+      <Table endpoint="/users/quote" num="3" />
+      <Table endpoint="/users/email" num="4" />
       {/* <Table endpoint="/group"/> */}
       <div className="table-container">
         <table className="user-table">
